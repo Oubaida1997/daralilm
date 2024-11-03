@@ -69,3 +69,13 @@ button:hover {
     width: 125px; /* Largeur de l'image */
     height: auto; /* Ajuste automatiquement la hauteur pour garder le ratio */
 }
+/* Couleur des liens */
+a {
+    color: #333; /* Change #333 pour la couleur que tu préfères */
+    text-decoration: none; /* Enlève le soulignement */
+}
+
+a:hover {
+    color: #d53565; /* Couleur au survol */
+    text-decoration: underline; /* Ajoute un soulignement au survol */
+}
