@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réserver un Livre</title>
+    <link rel="stylesheet" href="style_reservation.css">
+</head>
+<body>
+    <section id="reservation">
+        <h2>Réserver un Livre</h2>
+        <form action="https://formspree.io/f/{ton_cle_formspree}" method="POST">
+            <label for="nom">Nom complet :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="email">Adresse email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telephone">Numéro de téléphone (format : XX XX XX XX) :</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="XX XX XX XX" pattern="^\+227\s\d{2}\s\d{2}\s\d{2}\s\d{2}$" required>
+
+            <label for="livre">Titre du livre :</label>
+            <input type="text" id="livre" name="livre" required>
+
+            <label for="date">Date souhaitée pour le début de la réservation :</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="duree">Durée de l’emprunt :</label>
+            <select id="duree" name="duree" required>
+                <option value="1">1 semaine</option>
+                <option value="2">2 semaines</option>
+            </select>
+
+            <label for="commentaires">Commentaires ou instructions :</label>
+            <textarea id="commentaires" name="commentaires"></textarea>
+
+            <button type="submit">Envoyer la réservation</button>
+        </form>
+    </section>
+
+    <script>
+        // Récupérer les paramètres de l'URL
+        const params = new URLSearchParams(window.location.search);
+        const livre = params.get('livre'); // Récupère le titre du livre dans l'URL
+
+        // Préremplit le champ Titre du livre si un titre est passé dans l'URL
+        if (livre) {
+            document.getElementById('livre').value = livre;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+/* Style de base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2D2F34;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 18px;
+}
+
+/* Style de la section de réservation */
+#reservation {
+    background-color: #ffffff;
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Titre */
+#reservation h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+/* Style du formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style des labels */
+form label {
+    color: #333;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Style des champs de saisie */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"],
+form select,
+form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+/* Apparence uniforme pour le champ <select> */
+form select {
+    appearance: none; /* Enlève le style par défaut des navigateurs */
+    background-color: white;
+    color: #333;
+}
+
+/* Style du bouton */
+form button {
+    padding: 10px;
+    background-color: #d6d448;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #b12c54;
+}
+
+/* Style du champ de texte (textarea) */
+form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Alignement à gauche des éléments du formulaire */
+form label, form input, form textarea, form select {
+    text-align: left;
+    width: 100%;
+}
+
+/* Espacement supplémentaire pour les sections spécifiques */
+form input[type="tel"],
+form select {
+    margin-bottom: 20px; /* Ajouter un peu plus de marge entre les champs */
+}
