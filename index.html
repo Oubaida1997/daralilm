@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dar Al'Ilm - Maison des Savoirs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- En-tête avec le nom de la bibliothèque -->
+    <header>
+        <h1>Bienvenue à Dar Al'Ilm</h1>
+        <p>La Maison des Savoirs - Chaque livre est une porte vers la connaissance.</p>
+    </header>
+
+    <!-- Section de bienvenue -->
+    <section id="bienvenue">
+        <h2>Bienvenue dans notre bibliothèque en ligne</h2>
+        <p>Notre mission est de rendre la connaissance accessible à tous. Découvrez notre collection d'ouvrages inspirants, enrichis par les valeurs islamiques.</p>
+    </section>
+
+    <!-- Section catalogue -->
+    <section id="catalogue">
+        <h2>Catalogue des Livres</h2>
+        <div class="livre">
+            <a href="comment_memoriser_le_Coran.jpg" target="_blank">
+               <img src="comment_memoriser_le_Coran.jpg" alt="comment_memoriser_le_Coran" width="100" height="100">
+            </a>
+            <h3>Comment mémoriser le Coran</h3>
+            <p>Auteur : Dr. Nabil Aliouane</p>
+            <p>Description : Méthodes ; Conseils et Programmes</p>
+        </div>
+        <div class="livre">
+            <a href="Tout_savoir_sur_le_hajj_&_la_omra.jpg.webp" target="_blank">
+               <img src="Tout_savoir_sur_le_hajj_&_la_omra.jpg.webp" alt="Tout_savoir_sur_le_hajj_" width="100" height="100">
+            </a>
+            <h3>Tout savoir sur le Hajj & la Omra</h3>
+            <p>Auteur : Dr. Nabil Aliouane</p>
+            <p>Description : Guide religieux ; Conseils pratiques ; Astuces</p>
+        </div>
+        <div class="livre">
+            <h3>Titre du Livre 2</h3>
+            <p>Auteur : Auteur 2</p>
+            <p>Description : Une brève description de ce livre.</p>
+        </div>
+        <!-- Ajoute autant de livres que nécessaire en dupliquant la div .livre -->
+    </section>
+
+    <!-- Formulaire de contact -->
+    <section id="contact">
+        <h2>Contactez-nous pour réserver un livre</h2>
+        <form action="#" method="post">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+</body>
+</html>
